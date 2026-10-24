@@ -1,0 +1,39 @@
+
+[
+    { 
+        "id": 0, 
+        "name": "Strength", 
+        "score": null, 
+        "modifier": null 
+    },
+    { 
+        "id": 1, 
+        "name": "Dexterity", 
+        "score": null, 
+        "modifier": null 
+    },
+    { 
+        "id": 2, 
+        "name": "Constitution", 
+        "score": null, 
+        "modifier": null 
+    },
+    { 
+        "id": 3, 
+        "name": "Intelligence", 
+        "score": null,
+        "modifier": null 
+    },
+    { 
+        "id": 4, 
+        "name": "Wisdom", 
+        "score": null, 
+        "modifier": null 
+    },
+    { 
+        "id": 5, 
+        "name": "Charisma", 
+        "score": null, 
+        "modifier": null 
+    }
+]

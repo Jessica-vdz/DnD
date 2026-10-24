@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { use, useState } from "react";
+import abilities from "../json/abilities.json"
 import classItem from "../json/class.json"
-export function LoadCharacter({abilitiesItems , setAbilitiesItems}) {
+import race from "../json/race.json"
+export function LoadCharacter() {
     const [newClass, setNewClass] = useState([])
     const [selectedSkills, setSelectedSkills] = useState([]);
-
+    const [abilitiesItems, setAbilitiesItems] = useState([]);
+    const [race, setRace] = useState("");
     function rollAbility() {
 
-        const newAbilities = abilitiesItems.map((ability) => {
+        const newAbilities = abilities.map((ability) => {
             const numbers = [];
 
             for (let i = 0; i < 4; i++) {
@@ -25,12 +28,13 @@ export function LoadCharacter({abilitiesItems , setAbilitiesItems}) {
             };
         });
         setAbilitiesItems(newAbilities);
+        return newAbilities;
     }
 
-function rollClass() {
+function rollClass(rolledAbilies) {
     const classNew = [];
 
-    const sortedAbilities = abilitiesItems.sort((s1, s2) => {
+    const sortedAbilities = [...rolledAbilies].sort((s1, s2) => {
         if (s1.score > s2.score) return -1;
         if (s1.score < s2.score) return 1;
         return 0;
@@ -77,16 +81,18 @@ function rollClass() {
 
     setSelectedSkills(skills);
 }
-
-function roll() {
-    rollAbility();
-    rollClass();
-}
+    function rollRace() {
+        const newRaceId = Math.floor(Math.random() * race.length)
+        setRace(newRaceId.name);
+        console.log(race)
+    }
 
     function roll() {
-        rollAbility()
-        rollClass()
+        const newAbilities = rollAbility();
+        rollClass( newAbilities);
+        rollRace()
     }
+
 
     return(
         <main>
