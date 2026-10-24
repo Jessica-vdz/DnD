@@ -6,7 +6,8 @@ export function LoadCharacter() {
     const [newClass, setNewClass] = useState([])
     const [selectedSkills, setSelectedSkills] = useState([]);
     const [abilitiesItems, setAbilitiesItems] = useState([]);
-    const [race, setRace] = useState("");
+    const [raceItem, setRaceItem] = useState("");
+    const [healthStat, setHealthStat] = useState(null)
     function rollAbility() {
 
         const newAbilities = abilities.map((ability) => {
@@ -20,6 +21,7 @@ export function LoadCharacter() {
 
             const score = numbers[1] + numbers[2] + numbers[3];
             const modifier = Math.floor((score - 10) / 2);
+            console.log(modifier)
 
             return {
                 ...ability,
@@ -80,19 +82,27 @@ function rollClass(rolledAbilies) {
     }
 
     setSelectedSkills(skills);
+    return chosenClass;
+
 }
     function rollRace() {
         const newRaceId = Math.floor(Math.random() * race.length)
-        setRace(newRaceId.name);
-        console.log(race)
+        const newRaceName = race[newRaceId].name
+        setRaceItem(newRaceName);
+        console.log(newRaceName)
     }
+
 
     function roll() {
         const newAbilities = rollAbility();
-        rollClass( newAbilities);
+        const chosenClass = rollClass( newAbilities);
         rollRace()
-    }
 
+        const constitution = newAbilities[2]
+        const healthJson = constitution.modifier
+        const health = chosenClass.health + healthJson
+        setHealthStat(health)
+    }
 
     return(
         <main>
@@ -107,7 +117,9 @@ function rollClass(rolledAbilies) {
                 ))}
             </aside>
             <section>
-                {newClass.name}
+                <h1>{raceItem}</h1>
+                <h3>{newClass.name}</h3>
+                <h2>{healthStat}</h2>
                 <div>
                     {selectedSkills.map((item, index) => (
                         <p key={index}>{item}</p>

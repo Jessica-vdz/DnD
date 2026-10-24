@@ -1,86 +1,213 @@
 [
-    {
-        "id": 0,
-        "name":"Barbarian",
-        "max": 2,
-        "skill": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
-        "best": [0,2]
-    },
-    {
-        "id": 1,
-        "name":"Bard",
-        "max": 3,
-        "skill": ["vrage"],
-        "best": [1, 5]
-    },
-    {
-        "id": 2,
-        "name": "Cleric",
-        "max": 2,
-        "skill": ["History", "Insight", "Medicine", "Persuasion", "Religion"],
-        "best" : [2,4]
-    },
-    {
-        "id": 3,
-        "name" : "Druid",
-        "max" : 2,
-        "skill" : ["Animal Handling", "Arcana", "Insight", "Medicine", "Nature", "Perception", "Religion", "Survival"],
-        "best" : [2,4]
-    },
-    {
-        "id": 4,
-        "name" : "Fighter",
-        "max": 2,
-        "skill" : ["Acrobatics", "Animal Handling", "Athletics", "History", "Insight", "Intimidation", "Persuasion", "Perception","Survival"],
-        "best" : [0, 2]
-    }, 
-    {
-        "id": 5,
-        "name" : "Monk",
-        "max": 2,
-        "skill": ["Acrobatics", "Acrobatics", "History", "Religion", "Stealth"],
-        "best": [1, 4]
-    },
-    {
-        "id": 6,
-        "name" : "Paladin",
-        "max": 2,
-        "skill": ["Athletics", "Insight", "Intimidation", "Medicine", "Persuasion", "Religion"],
-        "best" : [0, 5]
-    },
-    {
-        "id": 7,
-        "name": "Ranger",
-        "max" : 3,
-        "skill": ["Animal Handling", "Athletics", "Insight", "Investigation", "Nature", "Perception", "Stealth", "Survival"],
-        "best" :[1, 5]
-    },
-    {
-        "id": 8,
-        "name" : "Rogue",
-        "max": 4,
-        "skill": ["Acrobatics","Athletics","Deception", "Insight", "Investigation", "Perception","Persuasion","Sleigh of Hand", "Stealth"],
-        "best" : [1,2]
-    },
-    {
-        "id": 9,
-        "name" : "Sorcerer",
-        "max": 2,
-        "skill": ["Arcana", "Deception", "Insight", "Intimidation", "Persuasion", "Religion"],
-        "best" : [2, 5]
-    },
-    {
-        "id": 10,
-        "name": "Warlock",
-        "max" : 2,
-        "skill": ["Arcana", "Deception", "History", "Investigation", "Nature", "Religion"],
-        "best": [2,5]
-    },
-    {
-        "id": 11,
-        "name" : "Wizard",
-        "max": 2,
-        "skill" : ["Arcana", "History", "Insight", "Medicine", "Religion"],
-        "best" : [2, 3]
-    }
+  {
+    "id": 0,
+    "name": "Barbarian",
+    "weapon": [
+      "Greataxe",
+      "Battleaxe",
+      "Flail",
+      "Longsword",
+      "Warhammer",
+      "Greatsword",
+      "Maul",
+      "Handaxe",
+      "Javelin",
+      "Spear",
+      "Mace",
+      "Quarterstaff",
+      "Greatclub",
+      "Light hammer",
+      "Club",
+      "Dagger",
+      "Sickle"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Bard",
+    "weapon": [
+      "Rapier",
+      "Longsword",
+      "Dagger",
+      "Club",
+      "Greatclub",
+      "Handaxe",
+      "Javelin",
+      "Light hammer",
+      "Mace",
+      "Quarterstaff",
+      "Sickle",
+      "Spear",
+      "Light crossbow",
+      "Dart",
+      "Shortbow",
+      "Sling"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cleric",
+    "weapon": [
+      "Mace",
+      "Warhammer"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Druid",
+    "weapon": [
+      "Club",
+      "Dagger",
+      "Greatclub",
+      "Handaxe",
+      "Javelin",
+      "Light hammer",
+      "Mace",
+      "Quarterstaff",
+      "Sickle",
+      "Spear"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Fighter",
+    "weapon": [
+      "Battleaxe",
+      "Flail",
+      "Glaive",
+      "Greataxe",
+      "Greatsword",
+      "Halberd",
+      "Lance",
+      "Longsword",
+      "Maul",
+      "Morningstar",
+      "Pike",
+      "Rapier",
+      "Scimitar",
+      "Shortsword",
+      "Trident",
+      "War pick",
+      "Warhammer",
+      "Whip",
+      "Hand crossbow",
+      "Heavy crossbow",
+      "Longbow",
+      "Net",
+      "Club",
+      "Dagger",
+      "Greatclub",
+      "Handaxe",
+      "Javelin",
+      "Light hammer",
+      "Mace",
+      "Quarterstaff",
+      "Sickle",
+      "Spear"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Monk",
+    "weapon": [
+      "Shortsword",
+      "Club",
+      "Dagger",
+      "Greatclub",
+      "Handaxe",
+      "Javelin",
+      "Light hammer",
+      "Mace",
+      "Quarterstaff",
+      "Sickle",
+      "Spear"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Paladin",
+    "weapon": [
+      "Longsword",
+      "Warhammer",
+      "Battleaxe",
+      "Flail",
+      "Greatsword",
+      "Maul",
+      "Morningstar",
+      "Rapier",
+      "Scimitar",
+      "Shortsword",
+      "War pick",
+      "Whip",
+      "Mace",
+      "Javelin",
+      "Spear",
+      "Handaxe",
+      "Dagger"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Ranger",
+    "weapon": [
+      "Shortsword",
+      "Scimitar",
+      "Rapier",
+      "Longsword",
+      "Handaxe",
+      "Dagger",
+      "Javelin",
+      "Spear",
+      "Quarterstaff",
+      "Shortbow",
+      "Longbow",
+      "Light crossbow"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Rogue",
+    "weapon": [
+      "Rapier",
+      "Shortsword",
+      "Shortbow",
+      "Dagger"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Sorcerer",
+    "weapon": [
+      "Dagger",
+      "Dart",
+      "Sling",
+      "Quarterstaff",
+      "Light crossbow"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Warlock",
+    "weapon": [
+      "Light crossbow",
+      "Dagger",
+      "Club",
+      "Greatclub",
+      "Handaxe",
+      "Javelin",
+      "Light hammer",
+      "Mace",
+      "Quarterstaff",
+      "Sickle",
+      "Spear"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Wizard",
+    "weapon": [
+      "Quarterstaff",
+      "Dagger"
+    ]
+  }
 ]
