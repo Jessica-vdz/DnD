@@ -1,0 +1,204 @@
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem 5%;
+    box-sizing: border-box;
+}
+
+.scrollContent {
+    width: 50vw;
+    max-width: 750px;
+    min-width: 450px;
+    padding: 3rem;
+    border-radius: 2rem;
+
+    background-image: url("./assets/scroll.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+.scrollHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.scrollHeader h1 {
+    font-size: 4rem;
+}
+
+.scrollHeader h2 {
+    font-size: 2.8rem;
+}
+
+.scrollMain {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.scrollAbility {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.abilityContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0.8rem 0.5rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.abilityStat {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.abilityStat h3 {
+    font-size: 1.6rem;
+}
+
+.abilityStat h4 {
+    font-size: 2rem;
+}
+
+.abilityModifier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    width: 3.8rem;
+    height: 3.8rem;
+    border: 0.1rem solid black;
+    border-radius: 50%;
+}
+
+.abilityModifier h4 {
+    font-size: 1.8rem;
+}
+
+.scrollStats {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #cfab80;
+    border-radius: 1rem;
+}
+
+.scrollStat {
+    padding-bottom: 0.8rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.4);
+}
+
+.scrollStats h3 {
+    font-size: 1.8rem;
+    overflow-wrap: anywhere;
+}
+
+.scrollStats p {
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+    overflow-wrap: anywhere;
+}
+
+button {
+    align-self: flex-start;
+    font-size: 2rem;
+    font-family: custom, 'Courier New', monospace;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    background-color: rgb(237, 183, 97);
+    border: 0.1rem solid #8a602c;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(220, 159, 66);
+}
+
+@media (max-width: 900px) {
+    .scrollContent {
+        width: 100%;
+        min-width: 0;
+        padding: 2rem;
+    }
+
+    .scrollMain {
+        gap: 1rem;
+    }
+
+    .scrollAbility {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 1rem;
+    }
+
+    .scrollContent {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .scrollMain {
+        gap: 0.5rem;
+    }
+
+    .scrollAbility {
+        width: 45%;
+    }
+
+    .abilityContainer {
+        padding: 0.5rem 0.2rem;
+    }
+
+    .abilityStat h3 {
+        font-size: 1.2rem;
+    }
+
+    .abilityStat h4,
+    .abilityModifier h4 {
+        font-size: 1.5rem;
+    }
+
+    .abilityModifier {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .scrollStats {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .scrollStats h3 {
+        font-size: 1.4rem;
+    }
+
+    .scrollStats p {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: custom;
+    src: url("./assets/PERRYGOT.TTF");
+}
+body {
+    background-image: url("./assets//fantasy-group-adventurers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: custom;
+    letter-spacing: .5rem;
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
